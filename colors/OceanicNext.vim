@@ -26,23 +26,23 @@
   endif
 "}}}
 " {{{ Colors
-  let s:base00=['#1b2b34', '235']
-  let s:base01=['#343d46', '237']
-  let s:base02=['#4f5b66', '240']
-  let s:base03=['#65737e', '243']
-  let s:base04=['#a7adba', '145']
-  let s:base05=['#c0c5ce', '251']
-  let s:base06=['#cdd3de', '252']
-  let s:base07=['#d8dee9', '253']
-  let s:base08=['#ec5f67', '203']
-  let s:base09=['#f99157', '209']
-  let s:base0A=['#fac863', '221']
-  let s:base0B=['#99c794', '114']
-  let s:base0C=['#62b3b2', '73']
-  let s:base0D=['#6699cc', '68']
-  let s:base0E=['#c594c5', '176']
-  let s:base0F=['#ab7967', '137']
-  let s:base10=['#ffffff', '15']
+  let s:base00=['#1b2b34', '235']   " darkest
+  let s:base01=['#343d46', '237']   " very dark
+  let s:base02=['#4f5b66', '240']   " darker gray
+  let s:base03=['#65737e', '243']   " dark grey
+  let s:base04=['#a7adba', '145']   " another gray
+  let s:base05=['#c0c5ce', '251']   "grey again
+  let s:base06=['#cdd3de', '252']   " darker white
+  let s:base07=['#d8dee9', '253']   " dark white
+  let s:base08=['#ec5f67', '203']   " red
+  let s:base09=['#f99157', '209']   " Dark orange
+  let s:base0A=['#fac863', '221']   " yellow
+  let s:base0B=['#99c794', '114']   " light green
+  let s:base0C=['#62b3b2', '73']    " light blue / cyan
+  let s:base0D=['#6699cc', '68']    " dark blue
+  let s:base0E=['#c594c5', '176']   " pink
+  let s:base0F=['#ab7967', '137']   " dark orange / brown
+  let s:base10=['#ffffff', '15']    " white
   let s:none=['NONE', 'NONE']
 
 " }}}
@@ -287,3 +287,6 @@ let g:terminal_color_15=s:base05[0]
 let g:terminal_color_background=s:base00[0]
 let g:terminal_color_foreground=s:base10[0]
 
+" Custom highlighting for Syntastic and YCM
+hi YcmErrorSign guifg=s:base08
+hi SyntasticErrorSign guifg=s:base08
